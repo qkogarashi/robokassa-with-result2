@@ -15,7 +15,11 @@ export const buildSendingSignatureString = ({
       ([key, value]) => `${key}=${value?.toString() ?? ''}`,
     ) ?? [];
   // Порядок параметров важен, сортируем по алфавиту
-  signatureUserParams.sort((a, b) => a.localeCompare(b));
+  signatureUserParams.sort((a, b) => {
+    if (a === 'ResultUrl2') return 1;
+    if (b === 'ResultUrl2') return -1;
+    return a.localeCompare(b);
+  });
 
   const signatureValues = [
     merchantLogin,
