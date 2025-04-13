@@ -16,8 +16,6 @@ export const buildSendingSignatureString = ({
     ) ?? [];
   // Порядок параметров важен, сортируем по алфавиту
   signatureUserParams.sort((a, b) => {
-    if (a === 'ResultUrl2') return 1;
-    if (b === 'ResultUrl2') return -1;
     return a.localeCompare(b);
   });
 
@@ -28,6 +26,7 @@ export const buildSendingSignatureString = ({
     order.outSumCurrency,
     order.userIp,
     order.receipt ? JSON.stringify(order.receipt) : undefined,
+    order.resultUrl2 ? order.resultUrl2 : undefined,
     password1,
     ...signatureUserParams,
   ];

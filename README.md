@@ -11,7 +11,7 @@
 ## Установка
 
 ```sh
-$ npm install @dev-aces/robokassa
+$ npm install @qkogarashi/robokassa-with-result2
 ```
 
 # Использование
@@ -23,7 +23,7 @@ $ npm install @dev-aces/robokassa
 TypeScript:
 
 ```typescript
-import { Robokassa } = from '@dev-aces/robokassa';
+import { Robokassa } = from '@qkogarashi/robokassa-with-result2';
 
 const robokassa = new Robokassa({
   merchantLogin: 'my_merchant_login',
@@ -64,7 +64,7 @@ const url = robokassa.generatePaymentUrl({
 JavaScript:
 
 ```javascript
-const { Robokassa } = require('@dev-aces/robokassa');
+const { Robokassa } = require('@qkogarashi/robokassa-with-result2');
 
 // Остальное аналогично TypeScript примеру.
 ```
@@ -80,7 +80,7 @@ Result URL для подтверждения и обработки успешн�
 TypeScript:
 
 ```typescript
-import { Robokassa, IRobokassaResponse } = from '@dev-aces/robokassa';
+import { Robokassa, IRobokassaResponse } = from '@qkogarashi/robokassa-with-result2';
 import express, { Request, Response } from 'express';
 
 const robokassa = new Robokassa({

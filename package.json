@@ -1,6 +1,6 @@
 {
-  "name": "@dev-aces/robokassa",
-  "version": "1.1.0",
+  "name": "@qkogarashi/robokassa-with-result2",
+  "version": "1.1.1",
   "description": "Robokassa Node.JS integration",
   "types": "lib/index.d.ts",
   "keywords": [
@@ -14,8 +14,8 @@
     "README.md"
   ],
   "main": "lib/index.js",
-  "repository": "git://github.com/dev-aces/node-robokassa.git",
-  "author": "Artur Ampilogov",
+  "repository": "git://github.com/qkogarashi/robokassa-with-result2.git",
+  "author": "qKogarashi",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf ./lib",
