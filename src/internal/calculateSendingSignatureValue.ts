@@ -30,7 +30,7 @@ export const buildSendingSignatureString = ({
     password1,
     ...signatureUserParams,
   ];
-
+  
   return signatureValues.filter((value) => value !== undefined).join(':');
 };
 
