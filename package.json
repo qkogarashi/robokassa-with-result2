@@ -1,6 +1,6 @@
 {
   "name": "@qkogarashi/robokassa-with-result2",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Robokassa Node.JS integration",
   "types": "lib/index.d.ts",
   "keywords": [
